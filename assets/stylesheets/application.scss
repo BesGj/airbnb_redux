@@ -1,10 +1,16 @@
-body {
-  font-family: Helvetica;
+.flat-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-#root {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.flat {
+  flex: 50% 0 0;
+  cursor: pointer;
+  border: 3px solid transparent;
 }
+
+.flat.selected {
+  border: 5px dashed red;
+}
+
+@import 'card';
